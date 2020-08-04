@@ -1,0 +1,152 @@
+/*
+* CARIT site CSS
+* IT 5443 Web Development Project
+* Author: Kat Greer
+* Last updated: June 26, 2018
+*/
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+	font-family: Helvetica, sans-serif;
+	padding: 2px;
+	background: #ffffff;
+	color: #3c3c3c;
+}
+a
+{
+	color: #007a95;
+}
+/* top navbar */
+.top-nav
+{
+	overflow: hidden;
+	background-color: #3c3c3c;
+}
+/* top navbar links */
+.top-nav a
+{
+	float: right;
+	display: block;
+	font-size: 12px;
+	padding: 10px 8px;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+/* top navbar link action on hover */
+.top-nav a:hover
+{
+	color: #007a95;
+}
+/* header */
+.header
+{
+	background-color: #f1f1f1;
+	text-align: center;
+	padding: 15px;
+}
+.header h1
+{
+	font-size: 35px;
+	color: #007a95;
+}
+/* two columns that float next to each other */
+/* left column */
+.leftcolumn
+{
+	float: left;
+	width: 20%;
+}
+/* right column */
+.rightcolumn
+{
+	float: left;
+	width: 80%;
+	padding-left: 20px;
+}
+/* clear floats after columns */
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+/* footer */
+.footer
+{
+	text-align: left;
+	font-size: 12px;
+	padding: 20px;
+	background-color: #f1f1f1;
+}
+/* responsive layout */
+@media screen and (max-width: 800px)
+{
+	.leftcolumn, .rightcolumn
+	{
+		width: 100%;
+		padding: 0;
+	}
+}
+/* left column site navigation */
+.site-nav
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #007a95;
+}
+/* site navigation links and styling */
+.site-nav li a
+{
+	display: block;
+	color: #ffffff;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+/* site navigation link action on hover */
+.site-nav li a:hover
+{
+	background-color: #ffffff;
+	color: #007a95;
+}
+/* faculty image styling */
+.faculty-list img
+{
+	float: left;
+	padding-right: 10px;
+}
+/* container for faculty information */
+#faculty-container
+{
+	padding-bottom: 8px;
+}
+/* form button styling */
+.form-button
+{
+	padding: 8px;
+	background-color: #007a95;
+	display: inline;
+	color: #ffffff;
+	font-size: 16px;
+}
+/* table styling */
+th
+{
+	text-align: left;
+	height: 30px;
+}
+td
+{
+	padding: 2px;
+}
+select
+{
+	font-family: Helvetica, sans-serif;
+	padding: 3px;
+	color: #3c3c3c;
+	font-size: 16px;
+}
